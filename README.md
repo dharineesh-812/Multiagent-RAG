@@ -1,16 +1,50 @@
-# React + Vite
+# Multiagent RAG — Placement Prep Assistant 🤖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent multi-agent RAG (Retrieval-Augmented Generation) system designed to assist students in campus placement preparation through AI-powered Q&A.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 [multiagent-rag.vercel.app](https://multiagent-rag.vercel.app)
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Multi-agent architecture for specialized query handling
+- RAG-based responses grounded in placement preparation content
+- Covers DSA, CS fundamentals (OS, DBMS, CN), and interview tips
+- Clean conversational UI built with React
+- Fast and lightweight — deployed on Vercel
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer | Technology |
+|---|---|
+| Frontend | React.js, JavaScript, CSS |
+| AI Layer | RAG (Retrieval-Augmented Generation) |
+| Agent Framework | Multi-agent orchestration |
+| Deployment | Vercel |
+| Build Tool | Vite |
+
+## ⚙️ How to Run Locally
+
+```bash
+git clone https://github.com/dharineesh-812/Multiagent-RAG.git
+cd Multiagent-RAG
+npm install
+npm run dev
+```
+
+## 🧠 How It Works
+
+1. User submits a placement-related question
+2. The router agent identifies the query type (DSA / CS theory / HR)
+3. The relevant specialized agent retrieves context from the knowledge base
+4. RAG pipeline generates a grounded, accurate response
+5. Answer is displayed in the conversational UI
+
+## 🔮 Future Enhancements
+
+- ChromaDB vector store integration for semantic search
+- LangChain agent orchestration
+- PDF upload for custom study material ingestion
+- Mock interview simulation mode
+- Performance analytics dashboard
